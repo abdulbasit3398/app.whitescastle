@@ -1,0 +1,37 @@
+.contact-info-list {
+    li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2px;
+    }
+}
+.content-attach{
+    .avatar{
+        img{
+            border-radius: 0;
+        }
+    }
+}
+@include screen-md-max {
+    #chat-bx{
+        height: 78px;
+        &.show-bx{
+           height: auto; 
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+	.card-columns {
+        column-count: 5;
+        column-gap: 10px;
+    }
+}
+@media only screen and (max-width: 1399px) {	
+	.card-columns {
+        column-count: 3;
+        column-gap: 10px;
+    }
+}
+
